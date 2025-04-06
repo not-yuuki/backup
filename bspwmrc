@@ -27,7 +27,7 @@ BSPWM_PFC='#98C379'
 
 ## Bspwm appearance
 BSPWM_BORDER='2'
-BSPWM_GAP='9'
+BSPWM_GAP='7'
 BSPWM_SRATIO='0.50'
 
 ## Configurations --------------------------------------------#
