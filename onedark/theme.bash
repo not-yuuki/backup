@@ -78,5 +78,5 @@ bspwm_nbc="$background"
 bspwm_abc="$color5"
 bspwm_pfc="$color2"
 bspwm_border='2'
-bspwm_gap='9'
+bspwm_gap='7'
 bspwm_sratio='0.50'
