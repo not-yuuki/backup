@@ -6,9 +6,9 @@
 
 # file
 time=`date +%Y-%m-%d-%H-%M-%S`
-geometry=`xrandr | grep 'current' | head -n1 | cut -d',' -f2 | tr -d '[:blank:],current'`
+#geometry=`xrandr | grep 'current' | head -n1 | cut -d',' -f2 | tr -d '[:blank:],current'`
 dir="`xdg-user-dir PICTURES`/Screenshots"
-file="Screenshot_${time}_${geometry}.png"
+file="Screenshot_${time}.png"
 border='0.678,0.425,0.232'
 
 # directory
@@ -18,10 +18,11 @@ fi
 
 # notify and view screenshot
 notify_view () {
-	notify_cmd_shot='dunstify -u low -h string:x-dunst-stack-tag:obscreenshot -i /usr/share/archcraft/icons/dunst/picture.png'
-	${notify_cmd_shot} "Copied to clipboard."
+#	notify_cmd_shot='dunstify -u low -h string:x-dunst-stack-tag:obscreenshot -i /usr/share/archcraft/icons/dunst/picture.png'
+	notify_cmd_shot="dunstify -u low -i ${dir}/${file}"
+#	${notify_cmd_shot} "Copied to clipboard."
 	paplay /usr/share/sounds/freedesktop/stereo/screen-capture.oga &>/dev/null &
-	viewnior ${dir}/"$file"
+#	viewnior ${dir}/"$file"
 	if [[ -e "$dir/$file" ]]; then
 		${notify_cmd_shot} "Screenshot Saved."
 	else
