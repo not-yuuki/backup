@@ -49,7 +49,7 @@ geany_font='JetBrainsMono Nerd Font 10'
 
 # Appearance
 gtk_font='Noto Sans 9'
-gtk_theme='Fluent-round-Light'
+gtk_theme='Gruvbox-Violet'
 icon_theme='Fluent-Light'
 cursor_theme='Qogirr'
 
@@ -63,20 +63,20 @@ dunst_border='2'
 dunst_separator='2'
 
 # Picom
-picom_backend='glx'
-picom_corner='0'
-picom_shadow_r='20'
-picom_shadow_o='0.60'
-picom_shadow_x='-20'
-picom_shadow_y='-20'
-picom_blur_method='none'
-picom_blur_strength='0'
+#picom_backend='xrender'
+#picom_corner='6'
+#picom_shadow_r='7'
+#picom_shadow_o='0.60'
+#picom_shadow_x='-7'
+#picom_shadow_y='-7'
+#picom_blur_method='none'
+#picom_blur_strength='10'
 
 # Bspwm
 bspwm_fbc="$accent"
 bspwm_nbc="$background"
 bspwm_abc="$color5"
 bspwm_pfc="$color2"
-bspwm_border='2'
-bspwm_gap='7'
+bspwm_border='0'
+bspwm_gap='9'
 bspwm_sratio='0.50'

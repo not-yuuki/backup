@@ -265,17 +265,6 @@ apply_dunst() {
 # Compositor --------------------------------
 apply_compositor() {
 	picom_cfg="$PATH_BSPWM/picom.conf"
-
-	# modify picom config
-#	sed -i "$picom_cfg" \
-#		-e "s/backend = .*/backend = \"$picom_backend\";/g" \
-#		-e "/#-cr-start/,/#-cr-end/c\#-cr-start\ncorner-radius = $picom_corner;\n#-cr-end" \
-#		-e "s/shadow-radius = .*/shadow-radius = $picom_shadow_r;/g" \
-#		-e "s/shadow-opacity = .*/shadow-opacity = $picom_shadow_o;/g" \
-#		-e "s/shadow-offset-x = .*/shadow-offset-x = $picom_shadow_x;/g" \
-#		-e "s/shadow-offset-y = .*/shadow-offset-y = $picom_shadow_y;/g" \
-#		-e "s/method = .*/method = \"$picom_blur_method\";/g" \
-#		-e "s/strength = .*/strength = $picom_blur_strength;/g"
 }
 
 # BSPWM -------------------------------------
